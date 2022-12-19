@@ -56,7 +56,7 @@ var transporter = nodemailer.createTransport({
       pass:  process.env.PASSWORD,
     },
   });
-  let link = "http://localhost:3000/activateEmail"
+  let link = "https://notesapp2211.netlify.app/activate"
         var mailOptions = {
           from: process.env.FROM,
           to: email,
