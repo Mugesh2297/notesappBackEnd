@@ -1,7 +1,7 @@
 const dotenv = require("dotenv");
 const express = require("express");
 const auth = require("./Modules/auth");
-const registerRouter = require("./routes/registerRouter");
+const registerRouter = require("./Routes/registerRouter");
 
 
 

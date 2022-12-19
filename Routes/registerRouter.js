@@ -1,7 +1,7 @@
 const express = require("express");
 require("../Db/connect");
 const router = express.Router();
-const Register = require("../models/registerModels");
+const Register = require("../Models/registerModels");
 const bcrypt = require ("bcrypt");
 const jwt = require("jsonwebtoken");
 const nodemailer = require("nodemailer");
