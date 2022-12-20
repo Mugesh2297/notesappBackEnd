@@ -181,7 +181,7 @@ router.post("/resetpassword", async function (req, res) {
       if (check) {
         let mailid = req.body.email;
         let rString = randomString.generate(12);
-        let link = `http://localhost:3000/resetpass/${check._id}`;
+        let link = `https://notesapp2211.netlify.app/resetpass/${check._id}`;
         // await Register.updateOne({email: req.body.email},{$set: {isActive: "Active"}});
 
         let response = await Register.updateOne({email: req.body.email},{$set: {randomString: rString }});
