@@ -152,7 +152,7 @@ router.post("/signin",async (req,res,next)=>{
     if(existUser.isActive=== "Active"){
         const token =jwt.sign({existUser}, process.env.SECRET_KEY,{expiresIn: "1h"});
 
-        res.send(token);
+        res.json({ token,existUser });
         console.log(token)
     }else{
         return res.status(400).send({msg:"User Not activated", code:"user"});
